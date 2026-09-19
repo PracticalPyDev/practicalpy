@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PracticalPy | Coming Soon - Learn Python through Practical Projects</title>
-    
+
     <!-- Google Fonts: Inter, Cairo & Fira Code -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Font Awesome Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Canvas Confetti for Celebration Effect -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
@@ -118,7 +118,7 @@
         <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-pyblue-500/20 blur-3xl animate-pulse-glow"></div>
         <!-- Python Yellow Glow Bottom Left/Right -->
         <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-pyyellow-400/15 blur-3xl animate-pulse-glow" style="animation-delay: 2s;"></div>
-        
+
         <!-- Subtle Tech Grid Overlay -->
         <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f293d0f_1px,transparent_1px),linear-gradient(to_bottom,#1f293d0f_1px,transparent_1px)] bg-[size:3.5rem_3.5rem]"></div>
     </div>
@@ -149,8 +149,8 @@
             </div>
 
             <!-- Language Switcher Button -->
-            <button 
-                onclick="toggleLanguage()" 
+            <button
+                onclick="toggleLanguage()"
                 id="langToggleBtn"
                 class="flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card border border-slate-700 hover:border-pyyellow-400/50 text-xs font-semibold text-gray-200 hover:text-white transition cursor-pointer shadow-md"
                 aria-label="Toggle Language"
@@ -162,7 +162,7 @@
     </header>
 
     <main class="relative z-10 my-auto py-8 px-6 max-w-5xl mx-auto text-center flex flex-col items-center">
-        
+
         <!-- Hero Tag -->
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card text-pyyellow-400 text-xs sm:text-sm font-semibold mb-6 border border-pyyellow-400/25 animate-float">
             <i class="fa-solid fa-code text-xs"></i>
@@ -202,25 +202,25 @@
             <h3 class="text-xs sm:text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4" data-i18n="countdownHeader">Expected Official Launch</h3>
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4" id="countdown">
                 <!-- Days -->
-                <div class="glass-card p-4 rounded-2xl border border-slate-800/80 flex flex-col items-center justify-center">
+                <!-- <div class="glass-card p-4 rounded-2xl border border-slate-800/80 flex flex-col items-center justify-center">
                     <span id="days" class="text-3xl sm:text-4xl font-black text-white font-mono">00</span>
                     <span class="text-xs text-gray-400 mt-1" data-i18n="days">Days</span>
-                </div>
+                </div> -->
                 <!-- Hours -->
-                <div class="glass-card p-4 rounded-2xl border border-slate-800/80 flex flex-col items-center justify-center">
+                <!-- <div class="glass-card p-4 rounded-2xl border border-slate-800/80 flex flex-col items-center justify-center">
                     <span id="hours" class="text-3xl sm:text-4xl font-black text-pyblue-400 font-mono">00</span>
                     <span class="text-xs text-gray-400 mt-1" data-i18n="hours">Hours</span>
-                </div>
+                </div> -->
                 <!-- Minutes -->
-                <div class="glass-card p-4 rounded-2xl border border-slate-800/80 flex flex-col items-center justify-center">
+                <!-- <div class="glass-card p-4 rounded-2xl border border-slate-800/80 flex flex-col items-center justify-center">
                     <span id="minutes" class="text-3xl sm:text-4xl font-black text-pyyellow-400 font-mono">00</span>
                     <span class="text-xs text-gray-400 mt-1" data-i18n="minutes">Minutes</span>
-                </div>
+                </div> -->
                 <!-- Seconds -->
-                <div class="glass-card p-4 rounded-2xl border border-slate-800/80 flex flex-col items-center justify-center">
+                <!-- <div class="glass-card p-4 rounded-2xl border border-slate-800/80 flex flex-col items-center justify-center">
                     <span id="seconds" class="text-3xl sm:text-4xl font-black text-white font-mono">00</span>
                     <span class="text-xs text-gray-400 mt-1" data-i18n="seconds">Seconds</span>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -228,15 +228,15 @@
             <p class="text-sm text-gray-300 mb-3" data-i18n="newsletterPrompt">Subscribe to get notified first on launch day & receive early access perks:</p>
             <form id="subscribeForm" onsubmit="handleSubscribe(event)" class="space-y-3">
                 <div class="relative flex flex-col sm:flex-row gap-2">
-                    <input 
-                        type="email" 
-                        id="emailInput" 
-                        required 
-                        placeholder="Enter your email address..." 
+                    <input
+                        type="email"
+                        id="emailInput"
+                        required
+                        placeholder="Enter your email address..."
                         class="glass-input w-full px-5 py-3.5 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pyyellow-400 transition text-sm"
                     >
-                    <button 
-                        type="submit" 
+                    <button
+                        type="submit"
                         id="submitBtn"
                         class="px-6 py-3.5 bg-gradient-to-r from-pyblue-500 to-pyblue-600 hover:from-pyblue-600 hover:to-pyblue-700 text-white font-semibold rounded-xl transition duration-200 shadow-lg glow-pyblue flex items-center justify-center gap-2 whitespace-nowrap text-sm cursor-pointer"
                     >
@@ -303,7 +303,7 @@
         </p>
 
         <!-- Social Media Links -->
-        <div class="flex items-center space-x-4 text-gray-400 text-base">
+        <!-- <div class="flex items-center space-x-4 text-gray-400 text-base">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-pyyellow-400 transition duration-200" title="GitHub">
                 <i class="fa-brands fa-github"></i>
             </a>
@@ -316,7 +316,7 @@
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-pyyellow-400 transition duration-200" title="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
-        </div>
+        </div> -->
     </footer>
 
     <script>
@@ -460,7 +460,7 @@
         // Handle Email Subscription Form
         function handleSubscribe(event) {
             event.preventDefault();
-            
+
             const emailInput = document.getElementById('emailInput');
             const submitBtn = document.getElementById('submitBtn');
             const feedback = document.getElementById('formFeedback');
